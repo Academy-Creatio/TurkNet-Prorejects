@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "c2173eb1-0b06-47eb-912b-88b212363293",
+    "Name": "Service_3eb336f",
+    "ModifiedOnUtc": "\/Date(1649242624000)\/",
+    "ManagerName": "ServiceSchemaManager",
+    "Caption": "TurkNet",
+    "DependsOn": []
+  }
+}

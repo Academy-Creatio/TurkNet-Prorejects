@@ -17,7 +17,10 @@ namespace WorkshopWorkingWithData.Files.DataOperations
         {
             const string tableName = "Contact";
 
-            Select select = new Select(UserConnection).Column("Name").From(tableName).Where("Id").IsEqual(Column.Parameter(ContactId)) as Select;
+            Select select = new Select(UserConnection)
+                .Column("Name")
+                .From(tableName)
+                .Where("Id").IsEqual(Column.Parameter(ContactId)) as Select;
             string OldName = select.ExecuteScalar<string>();
 
             Update update = new Update(UserConnection, tableName)
@@ -34,6 +37,7 @@ namespace WorkshopWorkingWithData.Files.DataOperations
             contact.FetchFromDB(ContactId);
 
             contact.SetColumnValue("Name", contact.GetTypedColumnValue<string>("Name")+" "+NewName);
+                       
             if (contact.UpdateInDB())
                 return "Updated";
             return "Failed";

@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "2233ca22-fb60-4937-9846-9cd68467515b",
+    "Name": "ProcessUserTask_GetBootParams",
+    "ModifiedOnUtc": "\/Date(1649243672000)\/",
+    "ManagerName": "ProcessUserTaskSchemaManager",
+    "Caption": "GetBootParams"
+  }
+}

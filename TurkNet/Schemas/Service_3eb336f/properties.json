@@ -1,0 +1,7 @@
+﻿{
+  "Properties": {
+    "BaseUri": "https://appservice.turk.net",
+    "CreatedInVersion": "7.18.5.1501",
+    "Type": "Rest"
+  }
+}

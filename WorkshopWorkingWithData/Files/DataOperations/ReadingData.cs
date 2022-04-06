@@ -37,7 +37,7 @@ namespace WorkshopWorkingWithData.Files.DataOperations
             CustomQuery custom;
             if(UserConnection.DBEngine.DBEngineType == DBEngineType.MSSql)
 			{
-                custom = new CustomQuery(UserConnection, "Select Id, Name, Phone, Email from Contact");
+                custom = new CustomQuery(UserConnection, "Select Id, Name, Phone, Email from dbo.Contact");
 			} 
             else if(UserConnection.DBEngine.DBEngineType == DBEngineType.PostgreSql)
 			{
@@ -69,7 +69,6 @@ namespace WorkshopWorkingWithData.Files.DataOperations
                 .Column("Email")
                 .Column("Phone")
                 .From("Contact");
-
 
             DataTable dt;
 
@@ -118,7 +117,8 @@ namespace WorkshopWorkingWithData.Files.DataOperations
             esqResult.AddColumn("Email");
             esqResult.AddColumn("Phone");
 
-            IEntitySchemaQueryFilterItem filterByEmail = esqResult.CreateFilterWithParameters(FilterComparisonType.Equal, "Email", email);
+            IEntitySchemaQueryFilterItem filterByEmail = esqResult.CreateFilterWithParameters(
+                FilterComparisonType.Equal, "Email", email);
             esqResult.Filters.Add(filterByEmail);
 
             Select select = esqResult.GetSelectQuery(UserConnection);
@@ -142,7 +142,7 @@ namespace WorkshopWorkingWithData.Files.DataOperations
                 custom = new CustomQuery(UserConnection, $"" +
                     $"Select \"Id\", \"Name\", \"Phone\", \"Email\" " +
                     $"from public.\"Contact\" " +
-                    $"where public.\"Email\" ='{email}'");
+                    $"where \"Email\" ='{email}'");
             }
             else
             {
@@ -197,6 +197,11 @@ namespace WorkshopWorkingWithData.Files.DataOperations
             // read Name of SysAdminUnit connected to Contact
             // https://academy.creatio.com/documents/technic-sdk/7-16/entityschemaquery-class-building-paths-columns
             // [Name_of_ joinable_schema:Name_of_column_for_linking_of_joinable_schema:Name_of_column_for_linking_of_current_schema].
+
+            // = INNER JOIN
+            // > LEFT OUTER JOIN (default)
+            // < RIGHT OUTER JOIN
+
             var sysAdminUnitName = esqResult.AddColumn("[SysAdminUnit:Contact:Id].Name"); 
             sysAdminUnitName.Name = "sysAdminUnitName";
 
@@ -215,7 +220,8 @@ namespace WorkshopWorkingWithData.Files.DataOperations
             EntitySchemaQuery esqResult = new EntitySchemaQuery(UserConnection.EntitySchemaManager, tableName);
             esqResult.AddColumn("Owner.Id");
             esqResult.AddColumn("Owner.Name");
-            var durationInMinutes = esqResult.CreateAggregationFunction(AggregationTypeStrict.Sum, "DurationInMinutes");
+            var durationInMinutes = esqResult.CreateAggregationFunction(
+                AggregationTypeStrict.Sum, "DurationInMinutes");
             durationInMinutes.Name = "DurationInMinutes";
             esqResult.AddColumn(durationInMinutes);
             

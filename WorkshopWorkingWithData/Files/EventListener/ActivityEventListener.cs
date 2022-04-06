@@ -30,7 +30,7 @@ namespace WorkshopWorkingWithData.Files.EventListener
             if (CountOverlappingActivitiesSelect(entity) != 0)
             {
                 e.IsCanceled = true;
-                string message = entity.GetLocalizableString("OverlappingActivitiesFoundMessage", GetType().Name);
+                string message = "Found overlapping activities";
                 MsgChannelUtilities.PostMessage(UserConnection, GetType().Name, message);
             }
         }

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="TurkNet" />
+			<Item Name="ServiceMethods.GetBootParams.Caption" Value="GetBootParams" />
+			<Item Name="ServiceMethods.GetBootParams.Request.Parameters.authUser.Caption" Value="authUser" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.CPDPCDate.Caption" Value="Result CustomerPeriodDetails PeriodChangeDate" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.CPDPDay.Caption" Value="Result CustomerPeriodDetails PeriodDay" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.FSFTName.Caption" Value="Result FiberStatus FiberTypeName" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.FSFType.Caption" Value="Result FiberStatus FiberType" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.FSIFiber.Caption" Value="Result FiberStatus IsFiber" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.Message.Caption" Value="Message" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RADate.Caption" Value="Result ActivationDate" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RCId.Caption" Value="Result CustomerId" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RCode.Caption" Value="ResultCode" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RICFiber.Caption" Value="Result IsCommitmentFiber" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RIFiber.Caption" Value="Result IsFiber" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RIFLogin.Caption" Value="Result IsFirstLogin" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RKIPeriod.Caption" Value="Result KpsInvalidationPeriod" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RMSId.Caption" Value="Result MainServiceId" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RPSDesc.Caption" Value="Result PlSegmentDesc" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RPSId.Caption" Value="Result PlSegmentId" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RSAPage.Caption" Value="Result ShowActivationPage" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RSGId.Caption" Value="Result ServiceGroupId" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RSId1.Caption" Value="Result SubscriberId" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RSId.Caption" Value="Result ServiceId" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RSOperators.Caption" Value="Result SystemOperators" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RSPBeginning.Caption" Value="Result ServicePeriodBeginning" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RSState.Caption" Value="Result ServiceState" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RTHPUrl.Caption" Value="Result TicketHelpPageUrl" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RTIFUrl.Caption" Value="Result TravelerInternetFunnelUrl" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RTMCNumber.Caption" Value="Result TravelerMainCustomerNumber" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RTProducts.Caption" Value="Result TravelerProducts" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RUri.Caption" Value="RedirectUri" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.RVPId.Caption" Value="Result VoiceProductId" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.SSIBlocked.Caption" Value="Result ServiceStatus IsBlocked" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.SSKIPeriod.Caption" Value="Result ServiceStatus KpsInvalidationPeriod" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.SSSDate.Caption" Value="Result ServiceStatus StatusDate" />
+			<Item Name="ServiceMethods.GetBootParams.Response.Parameters.Status.Caption" Value="Status" />
+			<Item Name="ServiceMethods.Method1.Caption" Value="Auth" />
+		</Items>
+	</Group>
+</Resources>

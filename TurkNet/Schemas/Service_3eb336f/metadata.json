@@ -1,0 +1,469 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ServiceSchemaManager",
+      "UId": "c2173eb1-0b06-47eb-912b-88b212363293",
+      "A2": "Service_3eb336f",
+      "A5": "49d8f672-b155-4b8c-9274-8bf06cf93775",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "e8975a76-62f8-412a-9fd9-c341c05eeb83",
+      "B8": "7.18.5.1501",
+      "IQ1": "https://appservice.turk.net",
+      "IQ2": 1,
+      "IQ7": [],
+      "IQ4": [
+        {
+          "UId": "cc928745-4f89-4f41-af8f-76e618fe97cf",
+          "A2": "GetBootParams",
+          "A3": "c2173eb1-0b06-47eb-912b-88b212363293",
+          "A4": "c2173eb1-0b06-47eb-912b-88b212363293",
+          "IR3": 5000,
+          "IR5": "null",
+          "IR1": {
+            "IW2": 1,
+            "IW1": [
+              {
+                "UId": "83ee0e1f-4ec8-470f-8d72-b2993edbc61b",
+                "A2": "authUser",
+                "IU1": "auth-user",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 4,
+                "IU5": {
+                  "IV1": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6Im9pbSIsIlVzZXJJbmZvIjoie1wiQWN0aXZhdGlvbkRhdGVcIjpcIjIwMjItMDEtMDZUMDA6MDA6MDBcIixcIkN1c3RvbWVySWRcIjoxOTA3LFwiRmliZXJTdGF0dXNcIjp7XCJGaWJlclR5cGVcIjozLFwiRmliZXJUeXBlTmFtZVwiOlwiVFRGaWJlckZUVEhcIixcIklzRmliZXJcIjp0cnVlfSxcIklzRmliZXJcIjozLFwiSXNGaXJzdExvZ2luXCI6ZmFsc2UsXCJNYWluU2VydmljZUlkXCI6bnVsbCxcIlBsU2VnbWVudElkXCI6NCxcIlNlcnZpY2VHcm91cElkXCI6MzcsXCJTZXJ2aWNlU3RhdGVcIjo2LFwiU2hvd0FjdGl2YXRpb25QYWdlXCI6ZmFsc2UsXCJTdWJzY3JpYmVySWRcIjpcIjIxMjY3NDc5NDhcIixcIlRva2VuSWRcIjpcIjBcIixcIlVzZXJOYW1lXCI6XCJBbGV4RGVTb3V6YVwiLFwiVXNlclNlcnZpY2VcIjo0OTM5MjU1LFwiVm9pY2VQcm9kdWN0SWRcIjowLFwiVHJhdmVsZXJQcm9kdWN0c1wiOltdLFwiVHJhdmVsZXJNYWluQ3VzdG9tZXJOdW1iZXJcIjowfSIsIm5iZiI6MTY0OTIyNzc3MiwiZXhwIjoxNjQ5MjQyMTcyLCJpYXQiOjE2NDkyMjc3NzIsImlzcyI6Imlzc3VlciIsImF1ZCI6ImF1ZGllbmNlIn0.zlToDTUf2aJlbeR6mZ02_oS-TT_etgH0LlgQ0GUqXck",
+                  "IV2": 1
+                },
+                "IU6": []
+              }
+            ],
+            "IT2": 2,
+            "IT1": "/ServiceOim/GetBootParams"
+          },
+          "IR2": {
+            "IW2": 1,
+            "IW1": [
+              {
+                "UId": "01cac47a-263d-47c6-b8dd-97c2ab2b54eb",
+                "A2": "Status",
+                "IU1": "$.status",
+                "IU2": "Boolean",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "e3318367-0b24-47cb-9617-b856e8cc05e4",
+                "A2": "RCode",
+                "IU1": "$.resultCode",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "14faba2a-419e-4403-81e4-a385a26d5663",
+                "A2": "Message",
+                "IU1": "$.message",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "922e7d15-9b86-41c4-9cda-bc00a484d22d",
+                "A2": "RUri",
+                "IU1": "$.redirectUri",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "f01822f2-33b4-4d19-b4c2-815c081a3fe2",
+                "A2": "RADate",
+                "IU1": "$.result.activationDate",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "9b793310-8ece-40ac-b0bb-e38bf083323f",
+                "A2": "RCId",
+                "IU1": "$.result.customerId",
+                "IU2": "Integer",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "c9bff3d9-ce29-41e5-8721-9c85b9ebac36",
+                "A2": "CPDPCDate",
+                "IU1": "$.result.customerPeriodDetails.periodChangeDate",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "2438f6f3-e57e-4816-b2aa-52af0f0d23a8",
+                "A2": "CPDPDay",
+                "IU1": "$.result.customerPeriodDetails.periodDay",
+                "IU2": "Integer",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "192e3492-2d71-4a5f-af15-350765275642",
+                "A2": "FSFType",
+                "IU1": "$.result.fiberStatus.fiberType",
+                "IU2": "Integer",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "86971d48-1136-428d-add4-1c883e10a9ea",
+                "A2": "FSFTName",
+                "IU1": "$.result.fiberStatus.fiberTypeName",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "4f6349b1-f6a1-4d2b-86f3-979a0009807a",
+                "A2": "FSIFiber",
+                "IU1": "$.result.fiberStatus.isFiber",
+                "IU2": "Boolean",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "5afd318f-812c-4b85-9995-80041d5b5874",
+                "A2": "RICFiber",
+                "IU1": "$.result.isCommitmentFiber",
+                "IU2": "Boolean",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "8a179afd-f462-4283-a34c-b58a41087764",
+                "A2": "RIFiber",
+                "IU1": "$.result.isFiber",
+                "IU2": "Boolean",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "a9c0ec27-48ef-472a-ace0-a3e1198f2f2f",
+                "A2": "RIFLogin",
+                "IU1": "$.result.isFirstLogin",
+                "IU2": "Boolean",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "8b8f6f1c-745a-45f9-99e6-0399062a3ae1",
+                "A2": "RKIPeriod",
+                "IU1": "$.result.kpsInvalidationPeriod",
+                "IU2": "Integer",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "443be6d7-b710-4447-9739-637b2bf7744e",
+                "A2": "RMSId",
+                "IU1": "$.result.mainServiceId",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "4de8906d-493e-4ed1-a315-530c28780912",
+                "A2": "RPSDesc",
+                "IU1": "$.result.plSegmentDesc",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "35b66184-c462-4a37-aaca-845773a2588f",
+                "A2": "RPSId",
+                "IU1": "$.result.plSegmentId",
+                "IU2": "Integer",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "33d72976-4361-4bbc-99b2-84f00c034307",
+                "A2": "RSGId",
+                "IU1": "$.result.serviceGroupId",
+                "IU2": "Integer",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "5b0f0810-afa9-45a2-8683-49591a562aff",
+                "A2": "RSId",
+                "IU1": "$.result.serviceId",
+                "IU2": "Integer",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "a1a345a1-8d12-44ea-b2f6-7b3e0a2cdb7f",
+                "A2": "RSPBeginning",
+                "IU1": "$.result.servicePeriodBeginning",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "b7b6f51d-b5bc-404f-8c0a-57ab6ebe84d1",
+                "A2": "RSState",
+                "IU1": "$.result.serviceState",
+                "IU2": "Integer",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "1d6dcdae-4c15-422e-bb6f-95205f2f2f12",
+                "A2": "SSIBlocked",
+                "IU1": "$.result.serviceStatus.isBlocked",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "5a14c757-b4e0-4c1d-bdc8-9d906c5f254b",
+                "A2": "SSKIPeriod",
+                "IU1": "$.result.serviceStatus.kpsInvalidationPeriod",
+                "IU2": "Integer",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "a8ac7c6c-8451-4a56-8f83-81281f94af3e",
+                "A2": "SSSDate",
+                "IU1": "$.result.serviceStatus.statusDate",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "51963e5b-e954-4fbf-bb84-0f2a73660581",
+                "A2": "RSAPage",
+                "IU1": "$.result.showActivationPage",
+                "IU2": "Boolean",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "c1cfa66c-e029-4029-9905-8e3e79f487f2",
+                "A2": "RSId1",
+                "IU1": "$.result.subscriberId",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "50ee9e78-ea77-472a-a9b9-9812f4cc29ef",
+                "A2": "RSOperators",
+                "IU1": "$.result.systemOperators",
+                "IU2": "Text",
+                "IU3": true,
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "d96153dc-1919-402e-a213-137b243a9d50",
+                "A2": "RTHPUrl",
+                "IU1": "$.result.ticketHelpPageUrl",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "38f98761-ed91-4928-9eab-209fa8d4ddb5",
+                "A2": "RTIFUrl",
+                "IU1": "$.result.travelerInternetFunnelUrl",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "7d1a6e2d-9732-4aad-9605-41f92a33c98c",
+                "A2": "RTMCNumber",
+                "IU1": "$.result.travelerMainCustomerNumber",
+                "IU2": "Integer",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "1c567f48-ffad-46af-8068-190ba159d354",
+                "A2": "RTProducts",
+                "IU1": "$.result.travelerProducts",
+                "IU2": "Text",
+                "IU3": true,
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "7d158ebd-b9b0-43c5-871e-c162e2ba2c48",
+                "A2": "RVPId",
+                "IU1": "$.result.voiceProductId",
+                "IU2": "Integer",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              }
+            ]
+          }
+        },
+        {
+          "UId": "0825e486-bf1c-4acd-8516-41410a6ce382",
+          "A2": "Method1",
+          "A3": "c2173eb1-0b06-47eb-912b-88b212363293",
+          "A4": "c2173eb1-0b06-47eb-912b-88b212363293",
+          "IR3": 5000,
+          "IR5": "null",
+          "IR1": {
+            "IW2": 1,
+            "IW1": [],
+            "IT2": 2,
+            "IT1": "/auth"
+          },
+          "IR2": {
+            "IW2": 1,
+            "IW1": []
+          }
+        }
+      ]
+    }
+  }
+}

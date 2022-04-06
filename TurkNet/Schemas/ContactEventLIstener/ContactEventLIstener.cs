@@ -28,7 +28,7 @@ namespace TurkNetConf
 			Terrasoft.Core.Factories.ClassFactory.Get<ICalculator>("V1");
 
 
-			entity.SetColumnValue("Name", "KIRILL TEST");
+			//entity.SetColumnValue("Name", "KIRILL TEST");
 		}
 		public override void OnSaved(object sender, EntityAfterEventArgs e)
 		{
