@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<OutputPath>Files\Bin\netstandard</OutputPath>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<Optimize>true</Optimize>
+		<RootNamespace>$(AssemblyName)</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Assemblies\**" />
+		<Compile Remove="Files\Bin\**" />
+		<Compile Remove="packages\**" />
+		<Compile Remove="Resources\DlbHelp.SourceCode\**" />
+		<Compile Remove="Resources\DlbOauthResponse.SourceCode\**" />
+		<Compile Remove="Schemas\**" />
+		<EmbeddedResource Remove="Assemblies\**" />
+		<EmbeddedResource Remove="Files\Bin\**" />
+		<EmbeddedResource Remove="packages\**" />
+		<EmbeddedResource Remove="Resources\DlbHelp.SourceCode\**" />
+		<EmbeddedResource Remove="Resources\DlbOauthResponse.SourceCode\**" />
+		<EmbeddedResource Remove="Schemas\**" />
+		<None Remove="Assemblies\**" />
+		<None Remove="Files\Bin\**" />
+		<None Remove="packages\**" />
+		<None Remove="Resources\DlbHelp.SourceCode\**" />
+		<None Remove="Resources\DlbOauthResponse.SourceCode\**" />
+		<None Remove="Schemas\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Common.Logging" Version="3.4.1" />
+		<PackageReference Include="CreatioSDK" Version="7.18.5.1500">
+			<TreatAsUsed>true</TreatAsUsed>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\TurkNet.Api\TurkNet.Api.csproj" />
+	</ItemGroup>
+</Project>
