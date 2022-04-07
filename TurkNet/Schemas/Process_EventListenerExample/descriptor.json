@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "758405d2-6d32-483e-a06d-6400f8dbd989",
+    "Name": "Process_EventListenerExample",
+    "ModifiedOnUtc": "\/Date(1649315782000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "EventListener Example"
+  }
+}

@@ -3,8 +3,14 @@
     "UId": "e8975a76-62f8-412a-9fd9-c341c05eeb83",
     "PackageVersion": "1.0.0",
     "Name": "TurkNet",
-    "ModifiedOnUtc": "\/Date(1638370128000)\/",
+    "ModifiedOnUtc": "\/Date(1649249504000)\/",
     "Maintainer": "Customer",
-    "DependsOn": []
+    "DependsOn": [
+      {
+        "UId": "2fabaf6c-0f92-4530-aef8-40345c021da2",
+        "PackageVersion": "7.8.0",
+        "Name": "ProductCore"
+      }
+    ]
   }
 }

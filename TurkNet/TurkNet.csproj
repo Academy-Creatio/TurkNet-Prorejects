@@ -13,20 +13,17 @@
 		<Compile Remove="Assemblies\**" />
 		<Compile Remove="Files\Bin\**" />
 		<Compile Remove="packages\**" />
-		<Compile Remove="Resources\DlbHelp.SourceCode\**" />
-		<Compile Remove="Resources\DlbOauthResponse.SourceCode\**" />
+		<Compile Remove="Resources\**" />
 		<Compile Remove="Schemas\**" />
 		<EmbeddedResource Remove="Assemblies\**" />
 		<EmbeddedResource Remove="Files\Bin\**" />
 		<EmbeddedResource Remove="packages\**" />
-		<EmbeddedResource Remove="Resources\DlbHelp.SourceCode\**" />
-		<EmbeddedResource Remove="Resources\DlbOauthResponse.SourceCode\**" />
+		<EmbeddedResource Remove="Resources\**" />
 		<EmbeddedResource Remove="Schemas\**" />
 		<None Remove="Assemblies\**" />
 		<None Remove="Files\Bin\**" />
 		<None Remove="packages\**" />
-		<None Remove="Resources\DlbHelp.SourceCode\**" />
-		<None Remove="Resources\DlbOauthResponse.SourceCode\**" />
+		<None Remove="Resources\**" />
 		<None Remove="Schemas\**" />
 	</ItemGroup>
 
@@ -35,6 +32,7 @@
 		<PackageReference Include="CreatioSDK" Version="7.18.5.1500">
 			<TreatAsUsed>true</TreatAsUsed>
 		</PackageReference>
+		<PackageReference Include="System.Collections.Immutable" Version="6.0.0" />
 		<PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
 		<PackageReference Include="System.Text.Json" Version="6.0.2" />
 	</ItemGroup>

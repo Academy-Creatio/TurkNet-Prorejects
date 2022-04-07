@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
+using Terrasoft.Core.Factories;
+using TurkNet.Api.Dto;
 
 namespace TurkNet.Api.Dto
 {
-	public class BootParamsDto
+	[DefaultBinding(typeof(IBootParamsDto))]
+	public class BootParamsDto : IBootParamsDto
 	{
 		[JsonPropertyName("status")]
 		public bool Status { get; set; }
@@ -18,11 +21,11 @@ namespace TurkNet.Api.Dto
 		public string RedirectUri { get; set; }
 
 		[JsonPropertyName("result")]
-		public BootParamsResultDto Result { get; set; }
+		public IBootParamsResultDto Result { get; set; }
 
 	}
 
-	public class BootParamsResultDto
+	public class BootParamsResultDto : IBootParamsResultDto
 	{
 
 		[JsonPropertyName("activationDate")]

@@ -27,19 +27,8 @@ namespace Terrasoft.Core.Process.Configuration
 
 		protected override bool InternalExecute(ProcessExecutingContext context) {
 
-
-			//IRemoteClient remoteClient = Factories.ClassFactory.Get<IRemoteClient>();
-
-			bool isFiber = false;
-			Task.Run(async () =>
-			{
-				//TurkNet.Dto.IBootParamsDto result =  await remoteClient.GetBootParams();
-				//result.Result.
-
-			}).Wait();
-
-
-
+			var calcl = Terrasoft.Core.Factories.ClassFactory.Get<ICalculator>("V1");
+			Result = calcl.Add(A, B);
 			return true;
 		}
 

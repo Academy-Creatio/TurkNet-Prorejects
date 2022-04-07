@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="EventsProcessSchema.BaseElements.EventSubProcess4_b78f5100796b47a1a57bcce77ba7419d.Caption" Value="On ContactLoaded Handler" />
+			<Item Name="EventsProcessSchema.BaseElements.ScriptTask_ContactLoaded.Caption" Value="ContactLoaded" />
+			<Item Name="EventsProcessSchema.BaseElements.StartMessage4_1bd358f1663f42d4be17a60a32ac2753.Caption" Value="On ContactLoaded" />
+			<Item Name="EventsProcessSchema.Caption" Value="Contact" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_f4135bf6d5d84263acde16cb19e94385.Caption" Value="LaneSet 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_f4135bf6d5d84263acde16cb19e94385.Lanes.Lane_6d0ed5c6f2874088b04a5ec6d0fc411e.Caption" Value="Lane 1" />
+		</Items>
+	</Group>
+</Resources>

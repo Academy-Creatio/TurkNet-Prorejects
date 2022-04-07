@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CreatioSDK" Version="7.18.5.1500" />
     <PackageReference Include="System.Text.Json" Version="6.0.2" />
   </ItemGroup>
 
