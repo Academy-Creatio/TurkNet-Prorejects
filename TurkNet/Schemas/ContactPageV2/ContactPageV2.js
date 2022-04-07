@@ -2,8 +2,12 @@ define("ContactPageV2", [], function() {
 	return {
 		entitySchemaName: "Contact",
 		attributes: {
-			
 
+			"Account": {
+				lookupListConfig: {
+					columns: ["Web", "Owner", "Type"]
+				}
+			},
 			 "MyEvents": {
 				dependencies: [
 					{
@@ -40,8 +44,50 @@ define("ContactPageV2", [], function() {
 				this.showInformationDialog("Name has changed to: "+this.$Name);
 			},
 			onEmailChanged: function(){
-				this.showInformationDialog("Email has changed to: "+this.$Email);
-			}
+				//this.showInformationDialog("Email has changed to: "+this.$Email);
+			},
+			
+			/**
+			 * @inheritdoc Terrasoft.BaseSchemaViewModel#setValidationConfig
+			 * @override
+			 */
+			 setValidationConfig: function() {
+				this.callParent(arguments);
+				this.addColumnValidator("Email", this.emailValidator);
+				this.addColumnValidator("Name", this.nameValidator);
+			 },
+
+			 emailValidator: function(){
+				var invalidMessage = "";
+				
+				let emailDomain = this.$Email.split('@')[1];
+				let accountDomain = this.$Account.Web;
+				if(emailDomain !== accountDomain){
+					invalidMessage = "Domains dont match";
+				}else{
+					invalidMessage = "";
+				}
+				
+				return {
+					invalidMessage: invalidMessage
+				};
+			 },
+			 nameValidator: function(){
+				var invalidMessage = "";
+				
+				let name= this.$Name;
+				if(name.includes("Supervisor")|| name.includes("Kirill")){
+					invalidMessage = "NO !!!!!!!";
+				}else{
+					invalidMessage = "";
+				}
+				
+				return {
+					invalidMessage: invalidMessage
+				};
+			 }
+
+
 
 		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
