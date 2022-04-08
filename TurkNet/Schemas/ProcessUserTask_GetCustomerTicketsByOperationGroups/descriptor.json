@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "8a1156af-b21f-4c8b-baeb-1ab686b2b045",
+    "Name": "ProcessUserTask_GetCustomerTicketsByOperationGroups",
+    "ModifiedOnUtc": "\/Date(1649430100000)\/",
+    "ManagerName": "ProcessUserTaskSchemaManager",
+    "Caption": "GetCustomerTicketsByOperationGroups"
+  }
+}
