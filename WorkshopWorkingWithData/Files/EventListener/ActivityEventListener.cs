@@ -30,7 +30,8 @@ namespace WorkshopWorkingWithData.Files.EventListener
             if (CountOverlappingActivitiesSelect(entity) != 0)
             {
                 e.IsCanceled = true;
-                string message = "Found overlapping activities";
+                //string message = "Found overlapping activities";
+				string message = "{\"event\": \"Overlapping activities detected\"}";
                 MsgChannelUtilities.PostMessage(UserConnection, GetType().Name, message);
             }
         }
