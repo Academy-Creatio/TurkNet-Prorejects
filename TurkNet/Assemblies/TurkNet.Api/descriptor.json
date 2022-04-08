@@ -1,9 +1,9 @@
 ﻿{
   "Descriptor": {
-    "UId": "dc35db87-776a-49a4-a093-6053e93e0a19",
+    "UId": "d1dc9546-754f-46f5-a5be-27a7856d7384",
     "Name": "TurkNet.Api.dll",
     "FullName": "TurkNet.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
     "IsNetStandard": true,
-    "ModifiedOnUtc": "\/Date(1649249070000)\/"
+    "ModifiedOnUtc": "\/Date(1649426876000)\/"
   }
 }

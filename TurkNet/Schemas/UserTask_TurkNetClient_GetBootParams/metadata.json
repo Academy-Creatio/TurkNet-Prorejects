@@ -1,0 +1,50 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ProcessUserTaskSchemaManager",
+      "UId": "871ec052-68c7-48e9-a97a-a416d6772b81",
+      "A2": "UserTask_TurkNetClient_GetBootParams",
+      "A5": "49d8f672-b155-4b8c-9274-8bf06cf93775",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "e8975a76-62f8-412a-9fd9-c341c05eeb83",
+      "B8": "7.18.5.1501",
+      "FJ1": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "5f6de3bb-47c2-2e33-cae3-f0147ad35f9e",
+          "A2": "CustomerId",
+          "A3": "871ec052-68c7-48e9-a97a-a416d6772b81",
+          "A4": "871ec052-68c7-48e9-a97a-a416d6772b81",
+          "L1": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
+          "L8": {},
+          "L11": false
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "68812419-c818-6edf-047c-6ceaca23ccd4",
+          "A2": "ResultStatus",
+          "A3": "871ec052-68c7-48e9-a97a-a416d6772b81",
+          "A4": "871ec052-68c7-48e9-a97a-a416d6772b81",
+          "L1": "90b65bf8-0ffc-4141-8779-2420877af907",
+          "L8": {},
+          "L11": false
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "31886a0e-d369-7f99-7203-19f22f772a30",
+          "A2": "ActivationDate",
+          "A3": "871ec052-68c7-48e9-a97a-a416d6772b81",
+          "A4": "871ec052-68c7-48e9-a97a-a416d6772b81",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {},
+          "L11": false
+        }
+      ],
+      "FK7": true,
+      "FK12": "#839DC3",
+      "FK16": true
+    }
+  }
+}

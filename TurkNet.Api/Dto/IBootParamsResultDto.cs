@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 
-namespace TurkNet.Api.Dto
+namespace TurkNet.Api
 {
 	public interface IBootParamsResultDto
 	{
 		string ActivationDate { get; set; }
 		int CustomerId { get; set; }
+		bool IsFiber { get; set; }
 		string SubscriberId { get; set; }
 		List<string> SystemOperators { get; set; }
 		string TicketHelpPageUrl { get; set; }
@@ -13,6 +14,5 @@ namespace TurkNet.Api.Dto
 		int TravelerMainCustomerNumber { get; set; }
 		List<string> TravelerProducts { get; set; }
 		int VoiceProductId { get; set; }
-		bool IsFiber { get; set; }
 	}
 }

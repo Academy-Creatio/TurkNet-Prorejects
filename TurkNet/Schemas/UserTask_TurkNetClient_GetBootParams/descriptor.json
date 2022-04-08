@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "871ec052-68c7-48e9-a97a-a416d6772b81",
+    "Name": "UserTask_TurkNetClient_GetBootParams",
+    "ModifiedOnUtc": "\/Date(1649428755000)\/",
+    "ManagerName": "ProcessUserTaskSchemaManager",
+    "Caption": "TurkNetClient GetBootParams"
+  }
+}

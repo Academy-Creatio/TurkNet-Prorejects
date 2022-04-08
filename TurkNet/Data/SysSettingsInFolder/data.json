@@ -1,0 +1,22 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "fcb15a2f-6286-482b-b97e-4a1f871ea1ab"
+        },
+        {
+          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
+          "Value": "66cb5318-39dd-43b2-9739-b30159a3816e",
+          "DisplayValue": "TurkNet API Client Id"
+        },
+        {
+          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
+          "Value": "14581e11-9f2f-4df0-a26f-b3b5af1b845f",
+          "DisplayValue": "TurkNet"
+        }
+      ]
+    }
+  ]
+}
