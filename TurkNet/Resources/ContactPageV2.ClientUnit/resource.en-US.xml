@@ -16,8 +16,8 @@
 			<Item Name="LocalizableStrings.FillContactWithSocialNetworksDataActionCaption.Value" Value="Update with social networks data" />
 			<Item Name="LocalizableStrings.FormSubmitDetailDetailCaptionOnPage.Value" Value="Submitted forms" />
 			<Item Name="LocalizableStrings.RelationshipTabCaption.Value" Value="Connected to" />
-			<Item Name="LocalizableStrings.SubActionOneCaption.Value" Value="Sub Action One Caption" />
-			<Item Name="LocalizableStrings.SubActionTwoCaption.Value" Value="Sub Action Two Caption" />
+			<Item Name="LocalizableStrings.SubActionOneCaption.Value" Value="Execute ESQ" />
+			<Item Name="LocalizableStrings.SubActionTwoCaption.Value" Value="Call Test WebService" />
 			<Item Name="LocalizableStrings.SubscribeCaption.Value" Value="Follow the feed" />
 			<Item Name="LocalizableStrings.SubscribedInformationDialog.Value" Value="You are now following feed: {0}" />
 			<Item Name="LocalizableStrings.TimelineTabCaption.Value" Value="Timeline" />

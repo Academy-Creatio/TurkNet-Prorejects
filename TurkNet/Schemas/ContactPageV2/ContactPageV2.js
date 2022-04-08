@@ -1,6 +1,10 @@
-define("ContactPageV2", [], function() {
+define("ContactPageV2", ["ServiceHelper", "DevTrainingMixin", "css!DevTrainingMixin"], 
+function(ServiceHelper, resources) {
 	return {
 		entitySchemaName: "Contact",
+		mixins: {
+			"DevTrainingMixin": "Terrasoft.DevTrainingMixin"
+		},
 		messages:{
 			/**
 			 * Published on: ContactSectionV2
@@ -164,11 +168,13 @@ define("ContactPageV2", [], function() {
 			},
 			onSubActionOneClick: function(){
 				let tag = arguments[0];
-				this.showInformationDialog("onSubActionOneClick");
+				//this.showInformationDialog("onSubActionOneClick");
+				this.doESQ();
 			},
 			onSubActionTwoClick: function(){
 				let tag = arguments[0];
-				this.showInformationDialog("onSubActionTwoClick");
+				//this.showInformationDialog("onSubActionTwoClick");
+				this.callWebService();
 			},
 			//#endregion
 			
@@ -180,8 +186,43 @@ define("ContactPageV2", [], function() {
 			 onMyRedButtonClick: function(){
 				let tag = arguments[3];
 				this.showInformationDialog("MyRedButton Clicked, tag is: "+tag);
-			}
+			},
 			//#endregion
+
+			/**
+			 * Call Custom Configuration WebService
+			 * @tutorial https://academy.creatio.com/docs/developer/back_end_development/web_services/overview#title-1243-10
+			 */
+			callWebService: function(){
+							
+				//Payload
+				var serviceData = {
+					"person":{
+						"email": "andrew@domain.com",
+						"name": this.$Name,
+						"age": 0
+					}	
+				};
+
+				// Calling the web service and processing the results.
+				// Can only execute/send POST requests
+				//https://baseUrl/0/rest/CustomExample/PostMethodName
+				ServiceHelper.callService(
+					"CreatioWsTemplate",	//CS - ClassName
+					"Test2", 				//CS - Method
+					function(response) 
+					{
+						var result = response.Test2Result;
+						if(result.name){
+							//var name = result[0].name;
+							this.showInformationDialog(result.name);
+						}
+					}, 
+					serviceData, 
+					this
+				);
+			},
+			
 		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
@@ -224,6 +265,31 @@ define("ContactPageV2", [], function() {
 					"tag": "LeftContainer_Red"
 				},
 				"parentName": "LeftContainer",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "MyRedButtonTwo",
+				"values": {
+					"itemType": 5,
+					"style": "red",
+					"classes": {
+						"textClass": [
+							"actions-button-margin-right"
+						],
+						"wrapperClass": [
+							"actions-button-margin-right"
+						]
+					},
+					"caption": "Red button",
+					"hint": "Page red button hint",
+					"click": {
+						"bindTo": "onMyRedButtonClick"
+					},
+					"tag": "LeftContainer_Red"
+				},
+				"parentName": "RightContainer",
 				"propertyName": "items",
 				"index": 7
 			},
